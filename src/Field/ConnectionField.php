@@ -12,9 +12,9 @@ namespace ACME\Module\NiceExtension\Site\Field;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Form\FormField;
 
-class ajaxConnectionField extends FormField
+class ConnectionField extends FormField
 {
-	protected $type = 'ajaxConnection';
+	protected $type = 'connection';
 	protected function getInput():string
 	{
 		$this->addAssets();
