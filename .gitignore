@@ -1,0 +1,30 @@
+# PhpStorm IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Build and temporary files
+/build/
+/dist/
+*.zip
+*.tar
+*.gz
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backup and log files
+*.bak
+*.log
+*.swp
+*~
+
+# Security and sensitive files
+.env
+*.env

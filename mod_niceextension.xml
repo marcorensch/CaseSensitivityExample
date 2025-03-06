@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+    <name>MOD_NICEEXTENSION</name>
+    <creationDate>06.03.2025</creationDate>
+    <author>proximate</author>
+    <authorEmail>your@email.com</authorEmail>
+    <authorUrl>http://your.url.com</authorUrl>
+    <copyright>A copyright</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>MOD_NICEEXTENSION_XML_DESCRIPTION</description>
+    <namespace path="src">ACME\Module\NiceExtension</namespace>
+
+    <files>
+        <folder module="mod_niceextension">services</folder>
+        <folder>tmpl</folder>
+        <folder>src</folder>
+        <filename>mod_NiceExtension.xml</filename>
+    </files>
+
+    <!-- Languages -->
+    <languages folder="language">
+        <language tag="en-GB">en-GB/mod_niceextension.ini</language>
+        <language tag="en-GB">en-GB/mod_niceextension.sys.ini</language>
+    </languages>
+
+    <media folder="media/mod_niceextension" destination="mod_niceextension">
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldprefix="ACME\Module\NiceExtension\Site\Field">
+                <field
+                        name="ajax-example-btn"
+                        type="ajaxConnection"
+                        label="My Button"
+                />
+            </fieldset>
+            <fieldset
+                    name="advanced">
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
