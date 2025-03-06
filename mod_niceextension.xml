@@ -15,7 +15,7 @@
         <folder module="mod_niceextension">services</folder>
         <folder>tmpl</folder>
         <folder>src</folder>
-        <filename>mod_NiceExtension.xml</filename>
+        <filename>mod_niceextension.xml</filename>
     </files>
 
     <!-- Languages -->
