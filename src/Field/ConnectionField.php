@@ -9,12 +9,14 @@
 
 namespace ACME\Module\NiceExtension\Site\Field;
 
+defined('_JEXEC') or die;
+
 use Joomla\CMS\Factory;
 use Joomla\CMS\Form\FormField;
 
-class ajaxConnectionField extends FormField
+class ConnectionField extends FormField
 {
-	protected $type = 'ajaxConnection';
+	protected $type = 'connection';
 	protected function getInput():string
 	{
 		$this->addAssets();
@@ -29,7 +31,7 @@ class ajaxConnectionField extends FormField
 		$wa->useScript('mod_niceextension.js.field.ajax');
 	}
 
-	private function buildHtml()
+	private function buildHtml():string
 	{
 		return '<button id="ajax-btn" class="btn btn-primary w-100">Click me and check Console</button>';
 	}

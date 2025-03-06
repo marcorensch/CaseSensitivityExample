@@ -34,7 +34,7 @@
             <fieldset name="basic" addfieldprefix="ACME\Module\NiceExtension\Site\Field">
                 <field
                         name="ajax-example-btn"
-                        type="ajaxConnection"
+                        type="connection"
                         label="My Button"
                 />
             </fieldset>
