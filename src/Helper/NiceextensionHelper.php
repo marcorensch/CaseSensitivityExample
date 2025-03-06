@@ -11,9 +11,9 @@ namespace ACME\Module\NiceExtension\Site\Helper;
 
 use Joomla\CMS\Factory;
 
-class NiceExtensionHelper
+class NiceextensionHelper
 {
-	/** THIS Version only works on localhost where case sensitivity is not given */
+	/** THIS Version works also on servers where case sensitivity is required */
 	public function responseToCallAjax()
 	{
 		$input = Factory::getApplication()->getInput();
@@ -24,7 +24,7 @@ class NiceExtensionHelper
 			echo json_encode($error);
 			Factory::getApplication()->close();
 		}
-		$data->response = "using NiceExtensionHelper";
+		$data->response = "using NiceextensionHelper";
 		echo json_encode($data);
 		Factory::getApplication()->close();
 	}
